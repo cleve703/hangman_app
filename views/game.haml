@@ -1,0 +1,22 @@
+%p
+  = @guess_array.join(" ")
+%p
+  Solution word is 
+  = @solution_word
+%p
+  Available letters: 
+  = @letters.join(" ")
+%p
+  = @misses
+  failed guesses. Game ends upon 6 failed guesses.
+%p
+  Letters guessed incorrectly:      
+  = @failed_guesses.sort.join(" ")
+%form(method="POST")
+  %label(for="guess")Guess a letter:
+  %input(name="guess" autofocus="autofocus")
+  %input(type="submit" value="Submit")
+%p 
+  = @message
+%p
+  %a(href="/" class="btn")Restart game? 

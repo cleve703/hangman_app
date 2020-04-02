@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %title Hangman
+    %link(link rel="stylesheet" href="styles.css")
+  %body
+    #wrapper
+      #header
+        %h1 Hangman
+        %h2 A popular word game
+ 
+      #content
+        =yield
+ 
+      -# #side_bar
+      -#   %h1 Side Bar
+      -#   %p
+      -#     This is the side bar of the webpage
+ 
+      #footer
+        %p
+          This app was created by Jay Conner, 
+          %a{:href => 'https://codingcop.com'} the CodingCop.
